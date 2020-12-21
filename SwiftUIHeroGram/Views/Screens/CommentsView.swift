@@ -21,8 +21,8 @@ struct CommentsView: View {
     // MARK: - ∆Global-PROPERTIES
     //∆..............................
     @State var submissionText: String = ""
+    @State var comments: [CommentModel] = []
     //∆..............................
-    
     
     var body: some View {
         
@@ -31,10 +31,10 @@ struct CommentsView: View {
             
             ScrollView {
                 
-                ForEach(0...100, id: \.self) { _ in
+                ForEach(comments) { comment in
                     //∆..........
                     LazyVStack {
-                        iAmHere(myStr: "PlaceHolder")
+                        MessageSubView(comment: comment)
                     }
                     
                 }
@@ -72,12 +72,50 @@ struct CommentsView: View {
         })// MARK: ||END__PARENT-VSTACK||
         .navigationBarTitle("Comments")
         .navigationBarTitleDisplayMode(.inline)
-        //.............................
+        // MARK: - onAppear
+        //--|............................................
+        .onAppear(perform: {
+            //∆..........
+            getComments()
+        })
+        //--|............................................
+        
+        //∆ HANGER ™👕™ .................
         
     }// MARK: |_End Of body_|
     /*©-----------------------------------------©*/
     
 }// MARK: END OF: CommentsView
 
-/*©-----------------------------------------©*/
+// MARK: -∆  extension CommentsView •••••••••
 
+extension CommentsView {
+    
+    ///∆ ........... Functions ...........
+    func getComments() -> Void {
+        //∆..........
+        let comment1 = CommentModel(
+            commentID: "", userID: "",
+            username: "Hood Thanos", content: "This is comment #1",
+            dateCreated: Date())
+        
+        let comment2 = CommentModel(
+            commentID: "", userID: "",
+            username: "Jerry", content: "This is comment #2",
+            dateCreated: Date())
+        
+        let comment3 = CommentModel(
+            commentID: "", userID: "",
+            username: "Jenny", content: "This is comment #3",
+            dateCreated: Date())
+        
+        let comment4 = CommentModel(
+            commentID: "", userID: "",
+            username: "Lana", content: "This is comment #4",
+            dateCreated: Date())
+        
+        comments.append(contentsOf: [comment1, comment2, comment3, comment4])
+        //∆..........
+        print("DEBUG: GET COMMENTS FROM THE DATABASE...")
+    }
+}

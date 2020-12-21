@@ -61,10 +61,16 @@ struct PostSubView: View {
             // MARK: -∆  Footer •••••••••
             HStack(alignment: .center, spacing: 20) {
                 
+                // MARK: -∆  Button(Like) •••••••••
                 Image(systemName: "heart")
                 
-                Image(systemName: "bubble.middle.bottom")
+                // MARK: -∆  Button(Comments) •••••••••
+                NavigationLink(
+                    destination: CommentsView(),
+                    label: { Image(systemName: "bubble.middle.bottom") }
+                )
                 
+                // MARK: -∆  Button(Share) •••••••••
                 Image(systemName: "paperplane")
                 
                 ///ººº..................................•••
@@ -73,6 +79,7 @@ struct PostSubView: View {
             }// ∆ END OF: HStack
             .padding(.all, 6)
             .font(.title3)
+            .foregroundColor(.primary)
             //∆ HANGER ™👕™ .................
             
             
