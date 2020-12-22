@@ -29,7 +29,7 @@ struct PostSubView: View {
             
             HStack {
                 // MARK: -∆  Image Black-Panther •••••••••
-                Image("black-panther")
+                Image("heroes2")
                     .circleImageFrame(aspectR: .fill, frameW: 30, frameH: 30)
                 
                 // MARK: -∆  User-Name •••••••••
@@ -51,12 +51,8 @@ struct PostSubView: View {
             //∆ HANGER ™👕™ .................
             
             // MARK: -∆  Post-Image •••••••••
-            Image("black-panther")
-                .renderModeImage(
-                    renderMode: .original,
-                    aspectRCGSize: CGSize(
-                        width: FULL_UI_SCREEN_WIDTH, height: 600)
-                )
+            Image("heroes2")
+                .imageFormattedFrame(.fit, w: FULL_UI_SCREEN_WIDTH, h: 450)
             
             // MARK: -∆  Footer •••••••••
             HStack(alignment: .center, spacing: 20) {

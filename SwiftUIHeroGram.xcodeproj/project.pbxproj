@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB6AAEF025927A4E00046946 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AAEEF25927A4E00046946 /* BrowseView.swift */; };
+		AB6AAEF525927B9200046946 /* CarouselSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6AAEF425927B9200046946 /* CarouselSubView.swift */; };
 		AB7318E025910CF700847E12 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7318DF25910CF700847E12 /* PostModel.swift */; };
 		AB7318F42591170200847E12 /* PostObjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7318F32591170200847E12 /* PostObjectList.swift */; };
 		AB7318F92591275700847E12 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7318F82591275700847E12 /* CommentsView.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB6AAEEF25927A4E00046946 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		AB6AAEF425927B9200046946 /* CarouselSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSubView.swift; sourceTree = "<group>"; };
 		AB7318DF25910CF700847E12 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		AB7318F32591170200847E12 /* PostObjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostObjectList.swift; sourceTree = "<group>"; };
 		AB7318F82591275700847E12 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 			children = (
 				ABA61716259033D10012900E /* FeedView.swift */,
 				AB7318F82591275700847E12 /* CommentsView.swift */,
+				AB6AAEEF25927A4E00046946 /* BrowseView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			children = (
 				ABA6171B259035020012900E /* PostSubView.swift */,
 				AB7318FD259130D200847E12 /* MessageSubView.swift */,
+				AB6AAEF425927B9200046946 /* CarouselSubView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -354,11 +360,13 @@
 				ABA61717259033D10012900E /* FeedView.swift in Sources */,
 				AB7318F92591275700847E12 /* CommentsView.swift in Sources */,
 				AB7318FE259130D200847E12 /* MessageSubView.swift in Sources */,
+				AB6AAEF025927A4E00046946 /* BrowseView.swift in Sources */,
 				ABA6171C259035020012900E /* PostSubView.swift in Sources */,
 				ABE46827258FE38A00E7B8E7 /* MainView.swift in Sources */,
 				AB7318E025910CF700847E12 /* PostModel.swift in Sources */,
 				AB7319032591339B00847E12 /* CommentModel.swift in Sources */,
 				ABE46859258FE43D00E7B8E7 /* LibTools.swift in Sources */,
+				AB6AAEF525927B9200046946 /* CarouselSubView.swift in Sources */,
 				ABE46861258FE45400E7B8E7 /* LibModifiers.swift in Sources */,
 				ABE46825258FE38A00E7B8E7 /* SwiftUIHeroGramApp.swift in Sources */,
 			);
