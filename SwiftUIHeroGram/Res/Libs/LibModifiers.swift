@@ -14,15 +14,15 @@ extension Image {
             .aspectRatio(contentMode: aspectR)
             .frame(width: frameW, height: frameH)
             .clipShape(Circle())
-    }   
+    }
     
-    func renderModeImage(renderMode: Image.TemplateRenderingMode, aspectRCGSize: CGSize) -> some View {
+    func imageFormattedFrame(_ aspectRatio:  ContentMode, w: CGFloat, h: CGFloat) -> some View {
         //∆..........
         self
-            .interpolation(.none)
-            .renderingMode(renderMode)
+            .renderingMode(.original)
             .resizable()
-            .aspectRatio(aspectRCGSize, contentMode: .fill)
+            .frame(width: w, height: h)
+            .aspectRatio(contentMode: aspectRatio)
     }
     
 }/// ∆ END extension Image

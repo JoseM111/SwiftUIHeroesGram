@@ -20,23 +20,20 @@ struct MainView: View {
     
     //∆..............................
     
-    fileprivate func extractedFunc() -> some View {
-        return // MARK: -∆  FeedView •••••••••
+    var body: some View {
+        
+        //.............................
+        TabView {
+            
+            // MARK: -∆  FeedView •••••••••
             NavigationView {
+                //∆..........
                 FeedView(posts: PostObjectList())
             }
             .tabItem {
                 Image(systemName: "book.fill")
                 Text("Feed")
             }
-    }
-    
-    var body: some View {
-        
-        //.............................
-        TabView {
-            
-            extractedFunc()
             
             Text("Screen-2")
                 .tabItem {
