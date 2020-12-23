@@ -6,7 +6,7 @@ struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
         
         NavigationView {
-            FeedView(posts: PostObjectList())
+            FeedView(posts: PostObjectList(), title: "FEED VIEW")
         }
         //.padding(.all, 100)
         //.preferredColorScheme(.dark)
@@ -18,10 +18,12 @@ struct FeedView_Previews: PreviewProvider {
 }
 
 struct FeedView: View {
-    // MARK: - ∆Global-PROPERTIES
-    //∆..............................
+    // MARK: - ™PROPERTIES™
+    ///™«««««««««««««««««««««««««««««««««««
     @ObservedObject var posts: PostObjectList
-    //∆..............................
+    //™•••••••••••••••••••••••••••••••••••«
+    var title: String
+    ///™«««««««««««««««««««««««««««««««««««
     
     var body: some View {
         
@@ -32,13 +34,13 @@ struct FeedView: View {
                 //∆..........
                 ForEach(posts.listOfPost) { post in
                     //∆..........
-                    PostSubView(post: post)
+                    PostSubView(post: post, showHeaderAndFooter: true)
                 }
             }
             
 
         })// MARK: ||END__PARENT-ScrollView||
-        .navigationBarTitle("Feed View")
+        .navigationBarTitle(title)
         .navigationBarTitleDisplayMode(.inline)
         //.............................
         

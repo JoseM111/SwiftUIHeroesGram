@@ -27,7 +27,7 @@ struct MessageSubView: View {
         HStack(alignment: .center, spacing: nil, content: {
             
             // MARK: -∆  Profile-Image •••••••••
-            Image("hood-thanos")
+            Image("heroes4")
                 .circleImageFrame(aspectR: .fill, frameW: 40, frameH: 40)
                 .shadow(color: Color.black.opacity(0.75),
                         radius: 5, x: 0.0, y: 0.0)

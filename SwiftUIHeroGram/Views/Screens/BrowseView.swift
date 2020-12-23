@@ -20,7 +20,7 @@ struct BrowseView_Previews: PreviewProvider {
 struct BrowseView: View {
     // MARK: - ∆Global-PROPERTIES
     //∆..............................
-    
+    var posts = PostObjectList()
     //∆..............................
     
     
@@ -29,9 +29,11 @@ struct BrowseView: View {
         //.............................
         ScrollView(.vertical, showsIndicators: false, content: {
             
+            // MARK: -∆  CarouselSubView •••••••••
             CarouselSubView()
             
-            
+            // MARK: -∆  ButtonNav(ImageGridSubView) •••••••••
+            ImageGridSubView(posts: posts)
             
         })// MARK: ||END__PARENT-ScrollView||
         .navigationBarTitle("Browse")

@@ -43,6 +43,11 @@ class PostObjectList: ObservableObject {
         listOfPost.append(contentsOf: [post1, post2, post3, post4])
         print("FETCH FROM DATABASE HERE...")
     }
+    
+    // MARK: -∆  Initializer USED FOR POST SINGLE SELECTION •••••••••
+    init(post: PostModel) {
+        self.listOfPost.append(post)
+    }
     ///∆.................................
     
     

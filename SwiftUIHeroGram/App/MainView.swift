@@ -13,33 +13,58 @@ struct ContentView_Previews: PreviewProvider {
         //.previewLayout(.fixed(width: 440, height: 270))
     }
 }
+/// @•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
+// MARK: -∆  STRUCT •••••••••
 struct MainView: View {
     // MARK: - ∆Global-PROPERTIES
     //∆..............................
+   var feedComponent: some View {
+        //∆..........
+        NavigationView {
+            //∆..........
+            FeedView(posts: PostObjectList(), title: "Feed")
+        }
+        .tabItem {
+            Image(systemName: "book.fill")
+            Text("Feed")
+        }
+        
+        
+    }/// ∆ END OF: feedComponent
     
+    var browseComponent: some View {
+        //∆..........
+        NavigationView {
+            //∆..........
+            BrowseView()
+        }
+        .tabItem {
+            Image(systemName: "magnifyingglass")
+            Text("Browse")
+        }
+    }/// ∆ END OF: browseComponent
     //∆..............................
     
+    /*©-----------------------------------------©*/
+    
+}// MARK: END: [STRUCT]
+/// @•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+// MARK: -∆  EXTENSION OF: MainView •••••••••
+extension MainView {
+    
+    // MARK: -∆  body •••••••••
     var body: some View {
         
         //.............................
         TabView {
             
             // MARK: -∆  FeedView •••••••••
-            NavigationView {
-                //∆..........
-                FeedView(posts: PostObjectList())
-            }
-            .tabItem {
-                Image(systemName: "book.fill")
-                Text("Feed")
-            }
+            feedComponent
             
-            Text("Screen-2")
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Browse")
-                }
+            // MARK: -∆  BrowseView •••••••••
+            browseComponent
             
             Text("Screen-3")
                 .tabItem {
@@ -59,11 +84,8 @@ struct MainView: View {
         //.............................
         
     }// MARK: |_End Of body_|
-    /*©-----------------------------------------©*/
-    
-}// MARK: END: [STRUCT]
+}// MARK: END OF: MainView
 
-/*©-----------------------------------------©*/
 // MARK: Helper Function
 func iAmHere(myStr: String) -> some View {
     return Text("\(myStr)")
