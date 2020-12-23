@@ -14,6 +14,7 @@
 		AB7318F92591275700847E12 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7318F82591275700847E12 /* CommentsView.swift */; };
 		AB7318FE259130D200847E12 /* MessageSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7318FD259130D200847E12 /* MessageSubView.swift */; };
 		AB7319032591339B00847E12 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7319022591339B00847E12 /* CommentModel.swift */; };
+		AB8E3E60259340060015A69D /* ImageGridSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E3E5F259340060015A69D /* ImageGridSubView.swift */; };
 		ABA61717259033D10012900E /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA61716259033D10012900E /* FeedView.swift */; };
 		ABA6171C259035020012900E /* PostSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6171B259035020012900E /* PostSubView.swift */; };
 		ABE46825258FE38A00E7B8E7 /* SwiftUIHeroGramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE46824258FE38A00E7B8E7 /* SwiftUIHeroGramApp.swift */; };
@@ -51,6 +52,7 @@
 		AB7318F82591275700847E12 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		AB7318FD259130D200847E12 /* MessageSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSubView.swift; sourceTree = "<group>"; };
 		AB7319022591339B00847E12 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		AB8E3E5F259340060015A69D /* ImageGridSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridSubView.swift; sourceTree = "<group>"; };
 		ABA61716259033D10012900E /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		ABA6171B259035020012900E /* PostSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSubView.swift; sourceTree = "<group>"; };
 		ABE46821258FE38A00E7B8E7 /* SwiftUIHeroGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIHeroGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +225,7 @@
 				ABA6171B259035020012900E /* PostSubView.swift */,
 				AB7318FD259130D200847E12 /* MessageSubView.swift */,
 				AB6AAEF425927B9200046946 /* CarouselSubView.swift */,
+				AB8E3E5F259340060015A69D /* ImageGridSubView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				ABE46827258FE38A00E7B8E7 /* MainView.swift in Sources */,
 				AB7318E025910CF700847E12 /* PostModel.swift in Sources */,
 				AB7319032591339B00847E12 /* CommentModel.swift in Sources */,
+				AB8E3E60259340060015A69D /* ImageGridSubView.swift in Sources */,
 				ABE46859258FE43D00E7B8E7 /* LibTools.swift in Sources */,
 				AB6AAEF525927B9200046946 /* CarouselSubView.swift in Sources */,
 				ABE46861258FE45400E7B8E7 /* LibModifiers.swift in Sources */,
